@@ -40,10 +40,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-	font-family: 'Montserrat', sans-serif;
-}
-
 .titlePage {
 	font-size: 3.5rem !important;
 	font-family: 'Montserrat', sans-serif;

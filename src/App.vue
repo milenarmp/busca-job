@@ -24,6 +24,10 @@ export default {
 </script>
 
 <style scoped>
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
 #back {
   background-color: #F6EFE9;
 }
