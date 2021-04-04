@@ -3,7 +3,7 @@
 		<div v-if="loadingPage">
 			<v-progress-linear
 				indeterminate
-				color="yellow darken-2"
+				color="indigo darken-4"
 			></v-progress-linear>
 		</div>
 		<div v-else class="page-content">	
