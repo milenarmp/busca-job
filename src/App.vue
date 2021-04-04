@@ -4,17 +4,20 @@
     <v-main>
       <router-view :key="$route.fullPath"></router-view>
     </v-main>
+		<Footer></Footer>
   </v-app>
 </template>
 
 <script>
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
 
   components: {
-    NavBar
+    NavBar,
+		Footer
   },
 
   data: () => ({

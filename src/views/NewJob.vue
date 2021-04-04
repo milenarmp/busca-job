@@ -1,5 +1,5 @@
 <template>
-	<v-container fluid>
+	<v-container fluid class="mb-5">
 		<div v-if="loadingPage">
 			<v-progress-linear
 				indeterminate
@@ -27,31 +27,31 @@
 								</v-col>
 							</v-row>
 						</v-card-text>
+						<v-row>
+							<v-col class="text-center" cols="12" lg="12" md="12">
+								<p class="fontRecruit">Recrute e selecione de forma eficaz</p>
+							</v-col>
+						</v-row>
+						<v-row>
+							<v-spacer></v-spacer>
+							<v-col class="text-center" cols="12" md="3" lg="3">
+								<p class="fontPropaganda">
+									<v-icon color="#102947">mdi-magnify</v-icon>
+									Visualização de currículos
+								</p>
+								<p>Perfis mais completos ganham mais detaque para facilitar a triagem</p>
+							</v-col>
+							<v-col class="text-center" cols="12" md="3" lg="3">
+								<p class="fontPropaganda">
+									<v-icon color="#102947">mdi-bullhorn</v-icon>
+									Divulgação de vagas
+								</p>
+								<p>Vagas que podem ser visualizadas por qualquer pessoa do país</p>
+							</v-col>
+							<v-spacer></v-spacer>
+						</v-row>
 					</v-card>
 				</v-col>
-			</v-row>
-			<v-row>
-				<v-col class="text-center" cols="12" lg="12" md="12">
-					<p class="fontRecruit">Recrute e selecione de forma eficaz</p>
-				</v-col>
-			</v-row>
-			<v-row>
-				<v-spacer></v-spacer>
-				<v-col class="text-center" cols="12" md="3" lg="3">
-					<p class="fontPropaganda">
-						<v-icon color="#102947">mdi-magnify</v-icon>
-						Visualização de currículos
-					</p>
-					<p>Perfis mais completos ganham mais detaque para facilitar a triagem</p>
-				</v-col>
-				<v-col class="text-center" cols="12" md="3" lg="3">
-					<p class="fontPropaganda">
-						<v-icon color="#102947">mdi-bullhorn</v-icon>
-						Divulgação de vagas
-					</p>
-					<p>Vagas que podem ser visualizadas por qualquer pessoa do país</p>
-				</v-col>
-				<v-spacer></v-spacer>
 			</v-row>
 		</div>
 	</v-container>
