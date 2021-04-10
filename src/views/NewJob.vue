@@ -16,6 +16,15 @@
 								<v-col align-self="center" cols="12" lg="7"> 
 									<p class="fontPropaganda">Os candidatos podem se cadastrar de qualquer canto do país, possibilitando a conexão entre o recrutador e 
 									àquele que está em busca de uma nova oportunidade no mercado de trabalho.<br><br><strong> Faça parte dessa rede!</strong></p>
+									<v-btn
+										elevation="2"
+										large
+										color="#102947"
+										dark
+										class="text-capitalize"
+									>
+										<v-icon class="pr-1">mdi-briefcase-plus-outline</v-icon>
+									Cadastrar vagas</v-btn>
 								</v-col>
 								<v-col cols="12" lg="4">
 									<v-img

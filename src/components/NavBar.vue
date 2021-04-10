@@ -7,8 +7,8 @@
 			<v-spacer></v-spacer>
 			<v-toolbar-title class="titlePage mt-10">Busca Job</v-toolbar-title>
 			<v-spacer></v-spacer>
-			<v-btn icon>
-				<v-icon>mdi-export</v-icon>
+			<v-btn icon @click="showModalLogin = true">
+				<v-icon>mdi-login-variant</v-icon>
 			</v-btn>
 			<template v-slot:extension>
 
@@ -18,22 +18,31 @@
 			v-model="tab"
 			align-with-title
 			mobile-breakpoint="450"
+			name="tabNavBar"
 		>
 			<v-tabs-slider color="#D2BFB8"></v-tabs-slider>
 
 			<v-tab class="tabItem" to="/">Achar vagas</v-tab>
 			<v-tab class="tabItem" to="/cadastrar-vaga">Cadastrar vagas</v-tab>
 		</v-tabs>
+		<LoginOrSingup v-model="showModalLogin"></LoginOrSingup>
 	</div>
 </template>
 
 <script>
+import LoginOrSingup from '../views/LoginOrSingup'
+
 export default {
+	components : {
+		LoginOrSingup
+	},
+
   name: 'NavBar',
 
 	data() {
 		return {
-			tab : null
+			tab : null,
+			showModalLogin : false
 		}
 	}
 }

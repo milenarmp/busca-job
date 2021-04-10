@@ -12,7 +12,7 @@
       <v-card-text>
         <v-btn
           v-for="icon in icons"
-          :key="icon"
+          :key="icon.icon"
           class="mx-4 white--text"
           icon
         >

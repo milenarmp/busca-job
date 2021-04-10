@@ -48,9 +48,19 @@
 					</v-card>
 				</v-col>
 			</v-row>
-			<v-row>
-				<v-col>
-					<!-- TODO: VAGAS MAIS NOVAS -->
+			<v-row justify="center">
+				<v-col lg="6">
+					<template>
+						<v-carousel style="border-radius: 3px">
+							<v-carousel-item
+								v-for="(item, i) in images"
+								:key="i"
+								:src="item.src"
+								reverse-transition="fade-transition"
+								transition="fade-transition"
+							></v-carousel-item>
+						</v-carousel>
+					</template>
 				</v-col>
 			</v-row>
 		</div>
@@ -63,7 +73,12 @@ export default {
 	data() {
 		return {
 			items : [],
-			loadingPage : false
+			loadingPage : false,
+			images : [
+				{ src : '/img/1.jpeg'},
+				{ src : '/img/2.jpg'},
+				{ src : '/img/índice.jpeg'},
+			]
 		}
 	},
 
