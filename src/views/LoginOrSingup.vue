@@ -2,6 +2,7 @@
 	<v-dialog 
 		v-model="showModal"
 		max-width="600px"
+		transition="dialog-bottom-transition"
 	>
 		<v-card color="#F6EFE9">
 			<v-card-title color="#F6EFE9">
@@ -59,6 +60,14 @@
 									>Acessar</v-btn>
 								</v-col>
 							</v-row>
+							<v-row justify="center">
+								<v-col class="mb-4" lg="4">
+									<v-btn
+										text
+										color="#102947"
+									>Esqueci a senha</v-btn>
+								</v-col>
+							</v-row>
 						</v-form>
 					</v-tab-item>
 					<v-tab-item style="background-color: #F6EFE9">
@@ -113,7 +122,7 @@
 											<v-col>
 												<v-text-field
 												outlined dense
-												:rules="[rules.required]"
+												:rules="[rules.required, rules.emailValid]"
 												label="E-mail"
 												></v-text-field>
 											</v-col>
@@ -174,7 +183,7 @@
 											<v-col>
 												<v-text-field
 												outlined dense
-												:rules="[rules.required]"
+												:rules="[rules.required, rules.emailValid]"
 												label="E-mail"
 												></v-text-field>
 											</v-col>
@@ -239,6 +248,7 @@ export default {
 			//regra de obrigatório para os campos
 			rules: {
 				required: value => !!value || 'Campo obrigatório',
+				emailValid: value => /.+@.+/.test(value) || 'E-mail deve ser válido',
 			},
 			typeUser : null
 		}
